@@ -249,6 +249,8 @@ body {
 }
 
 .grid-container>.nav {
+    padding-top: 8px;
+    padding-bottom: 8px;
     margin-left: 27px;
     margin-right: 27px;
     align-items: center;
@@ -282,7 +284,7 @@ body {
 
 .main-article-left {
     grid-column: 2 / 4;
-    gap: 15px;
+    column-gap: 15px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
@@ -351,11 +353,12 @@ body {
 
 .main-article-right {
     grid-column: 4;
-    gap: 15px;
+    /* gap: 15px; */
     display: grid;
 }
 
 .main-article-right>.side-card-top {
+    margin-bottom: 25px;
     grid-template-columns: 8fr;
     gap: 15px;
     padding: 20px;
@@ -382,6 +385,7 @@ body {
 }
 
 .main-article-right>.side-card-bottom {
+    margin-top: 10px;
     justify-self: start;
     gap: 15px;
     padding: 30px;
